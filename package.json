@@ -1,0 +1,23 @@
+{
+  "name": "ts_tutorial",
+  "version": "1.0.0",
+  "description": "typescript tutorial",
+  "main": "basics.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GEOkettle/ts_tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GEOkettle/ts_tutorial/issues"
+  },
+  "homepage": "https://github.com/GEOkettle/ts_tutorial#readme",
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
