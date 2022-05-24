@@ -1,3 +1,5 @@
+//function
+
 //first TS doesn't like module.export
 // use export default
 
@@ -53,9 +55,15 @@ function introduce(salutation: string, ...names: string[]): string {
 // not a runtime!
 
 export function getName(user: {firstName: string, lastName: string}): string {
-    return `${user.firstName} ${user.lastName}`;
-
+    return `${user?.firstName ?? 'pass some'} ${user?.lastName  ?? 'value'}`;
+    //  check if user is null or undefined                           default value
+    
     // so if you just declare type and do nothing in the code, it occurs error when you run the code
     // so you need to adjust not only the type but also the value
+    // for example on the line above, you get the undefined error if you dont check user like user?.firstName
+    // so you need to check if user is null or undefined
+    // if user is null or undefined, you can use ?? operator to set default value
+
+
     // look functions.js to check difference between before compile and after compile
 }

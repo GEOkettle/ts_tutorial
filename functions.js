@@ -1,4 +1,3 @@
-console.log(getName({firstName :'geo', lastName : 'jones'}));
 "use strict";
 //first TS doesn't like module.export
 // use export default
@@ -52,6 +51,11 @@ function introduce(salutation) {
 // during compiling, typescript will check the type of the parameters and return type
 // not a runtime!
 function getName(user) {
-    return "".concat(user.firstName, " ").concat(user.lastName);
+    var _a, _b;
+    return "".concat((_a = user === null || user === void 0 ? void 0 : user.firstName) !== null && _a !== void 0 ? _a : 'pass some', " ").concat((_b = user === null || user === void 0 ? void 0 : user.lastName) !== null && _b !== void 0 ? _b : 'value');
+    //  check if user is null or undefined                           default value
+    // so if you just declare type and do nothing in the code, it occurs error when you run the code
+    // so you need to adjust not only the type but also the value
+    // look functions.js to check difference between before compile and after compile
 }
 exports.getName = getName;

@@ -1,3 +1,5 @@
+//types
+
 // let userName = "GEO";
 // let hasLoggined = true;
 
@@ -56,7 +58,7 @@ const ids : Record<number,string> = {
     1: "GEO",
     2: "random"
 }   
-
+//https://developer-talk.tistory.com/296 about record type
 ids[3] = "kyun"; 
 
 if(ids[3] ==='23'){
