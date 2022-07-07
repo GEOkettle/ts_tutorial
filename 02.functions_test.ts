@@ -1,4 +1,4 @@
-import addNumbers,{getName,addStrings,addStringsWithDefalutValue,addUnion,printAddUnion,fetchData} from "./functions";
+import addNumbers,{getName,addStrings,addStringsWithDefalutValue,addUnion,printAddUnion,fetchData} from "./02.functions";
 // import addStrings from "./functions"; this is not working, because it just import the default function and rename it
 
 
