@@ -38,7 +38,7 @@ a();
 
 //function overload
 
-interface Member { 
+type Member= { 
     name: string;
     age: number;
 }

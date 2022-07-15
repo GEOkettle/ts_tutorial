@@ -19,6 +19,10 @@ obj = { a: 1, b: "fsda" }
 
 
 //interface
+
+//The typescript type supports only the data types and not the use of an object. 
+//The typescript interface supports the use of the object.
+
 type Score = 'A' | 'B' | 'C' | 'D' | 'E' | 'F';
 interface User { 
     name: string;
@@ -30,8 +34,7 @@ interface User {
 
 }
 
-let user: User;
-user = {
+let user: User = {
     name: "GEO",
     age: 29,
     identity: "vegabond",
